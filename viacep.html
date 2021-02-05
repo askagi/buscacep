@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>busca CEP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- <h1>Busca CEPs</h1> -->
+    </header>
+
+    <main id="container">
+        <section id="form-section">
+            <form id="form_data" onsubmit="Form.submit(event)">
+                <h1>Busca CEPs</h1>
+                <div class="input-group">
+                    <select id="state" name="state">
+                        <option value="">Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" placeholder="Cidade" id="city" name="city">
+                </div>
+
+                <div class="input-group">
+                    <input type="text" placeholder="Logradouro ou Rua" id="public_place" name="public_place">
+                </div>
+
+                <button type="submit">Buscar</button>
+            </form>
+
+        </section>
+
+        <section id="ceps-section">
+
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>CEP</th>
+                        <th>Logradouro</th>
+                        <th>Bairro</th>
+                        <th>Localidade</th>
+                        <th>UF</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="https://github.com/askagi" target="_blank">
+            <p>by José Costa</p>
+            <img src="./assets/github-brands.svg" alt="logo do github">
+            <p>Github</p>
+        </a>
+    </footer>
+
+
+    <script src="js/viacep.js"></script>
+</body>
+
+</html>
